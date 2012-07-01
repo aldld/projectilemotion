@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Projectile Motion</title>
+    
+    <script src="jquery.js" type="text/javascript"></script>
+    <script src="projectile.js" type="text/javascript"></script>
+</head>
+<body>
+    
+    <h1>Projectile Motion</h1>
+    
+    <form action="" method="get" id="values">
+        <p>
+            <label for="width">Width</label>
+            <input type="text" name="width" id="width" value="100" /> m
+        </p>
+        <p>
+            <label for="height">Height</label>
+            <input type="text" name="height" id="height" value="150" /> m
+        </p>
+        <p>
+            
+            <label for="gravity">Gravitational acceleration</label>
+            <input type="text" name="gravity" id="gravity" value="-9.81" /> m/s^2
+        </p>
+        <p>
+            <label for="initspeed">Initial speed</label>
+            <input type="text" name="initspeed" id="initspeed" value="50" /> m/s
+        </p>
+        <p>
+            <label for="angle">Angle</label>
+            <input type="text" name="angle" id="angle" value="80" /> degrees
+        </p>
+        <p>
+            <label for="display-velocity">Display velocity vector?</label>
+            <input type="checkbox" name="display-velocity" id="display-velocity" />
+        </p>
+        <p>
+            <input type="button" id="animate" value="Animate!" />
+        </p>
+    
+        <canvas id="graph" width="640" height="480" style="border:1px solid #000;">Your browser is not supported.</canvas>
+        
+        <p>t = <input type="text" id="time" value="0" />s <input type="button" id="go" value="Go" /></p>
+        
+        <p>x = <span id="xpos">0</span>m, y = <span id="ypos">0</span>m</p>
+        
+        <p>velocity = <span id="speed">0</span>m/s, <span id="instantangle">0</span> degrees</p>
+        
+        <p>v_x = <span id="v_x">0</span>m/s, v_y = <span id="v_y">0</span>m/s</p>
+        
+        <p>Peak x = <span id="peak_x">0</span>m, y = <span id="peak_y">0</span>m, t = <span id="peak_t">0</span>s</p>
+        
+        <p>Range = <span id="range">0</span>m in <span id="total-time">0</span>s</p>
+    </form>
+    
+</body>
+</html>
